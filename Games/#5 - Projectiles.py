@@ -52,7 +52,7 @@ class Player:
                 win.blit(walkRight[0], (self.x, self.y))
 
 
-# We created a class for objects that'll coming out of our character
+# We created a class for objects that'll be coming out of our character
 class Projectiles:
     # facing will define the direction of our bullets, left(-1) or right(1)
     def __init__(self, x, y, radius, color, facing):
