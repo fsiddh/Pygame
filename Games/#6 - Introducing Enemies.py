@@ -92,14 +92,12 @@ class Enemy:
                 self.x += self.vel
             else:  # Change direction and move back the other way
                 self.vel = self.vel * -1
-                self.x += self.vel
                 self.walkCount = 0
         else:  # If we are moving left
             if self.x > self.path[0] - self.vel:  # If we have not reached the furthest left point on our path('self.x')
                 self.x += self.vel
             else:  # Change direction
                 self.vel = self.vel * -1
-                self.x += self.vel
                 self.walkCount = 0
 
 
