@@ -8,12 +8,12 @@ This repository consists of step by step guidance for creating a game using pyga
 
 ## Pictorial Demostration of Output from each python file in the Games Folder.
 ### Step 1 
-#### Moving a rectangle around the screen with fill.
+#### Just moving a rectangle around the screen with fill.
 <img src="Step 1.PNG" alt="Trulli" width="500" height="333"><br><br><br>
 
 
 ### Step 2
-#### Just moving a rectangle around the screen without fill.
+#### Moving a rectangle around the screen without fill.
 <img src="Step 2.PNG" alt="Trulli" width="500" height="333"><br><br><br>
 
 
