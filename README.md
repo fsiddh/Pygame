@@ -12,6 +12,11 @@ This repository consists of step by step guidance for creating a game using pyga
 <img src="Step 1.PNG" alt="Trulli" width="500" height="333">
 
 
+
+
+
+
+
 ### Step 2
 #### Just moving a rectangle around the screen without fill.
 <img src="Step 2.PNG" alt="Trulli" width="500" height="333">
