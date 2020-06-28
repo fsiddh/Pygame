@@ -14,22 +14,22 @@ This repository consists of step by step guidance for creating a game using pyga
 
 ### Step 2
 #### Just moving a rectangle around the screen without fill.
-<img src="Step 2.PNG" alt="Trulli" width="500" height="333">
+<img src="Step 2.PNG" alt="Trulli" width="500" height="333"><br><br><br>
 
 
 ### Step 3
 #### Adding background and our character.
-<img src="Step 3.PNG" alt="Trulli" width="500" height="333">
+<img src="Step 3.PNG" alt="Trulli" width="500" height="333"><br><br><br>
 
 
 ### Step 4
 #### Shooting bullets and fixing the facing issue.
-<img src="Step 4.png" alt="Trulli" width="500" height="333">
+<img src="Step 4.png" alt="Trulli" width="500" height="333"><br><br><br>
 
 
 ### Step 5 
 #### Creating an Enemy.
-<img src="Step 5.PNG" alt="Trulli" width="500" height="333">
+<img src="Step 5.PNG" alt="Trulli" width="500" height="333"><br><br><br>
 
 
 ### Step 6
