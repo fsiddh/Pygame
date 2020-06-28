@@ -128,7 +128,7 @@ def redraw_game_window():
 
 
 man = Player(200, 410, 64, 64)
-enemy = Enemy(100, 410, 64, 64, 400)
+enemy = Enemy(70, 410, 64, 64, 400)
 bullets = []
 run = True
 # mainloop
