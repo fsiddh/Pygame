@@ -23,7 +23,7 @@ This repository consists of step by step guidance for creating a game using pyga
 
 
 ### Step 4:
-#### Here I only made the code more organized using OOP concepts(For better understanding).
+#### Here I only made the code more organized by using OOP concepts(For better understanding).
 
 
 ### Step 5:
