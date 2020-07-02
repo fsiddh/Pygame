@@ -174,7 +174,7 @@ def redraw_game_window():
     enemy.draw(win)
 
     # (S5) After we create our font we need to render some text and blit it to the screen.
-    text = font.render('Score: {}'.format(score), 1, (0, 0, 0)) # Arguments are: text, anti-aliasing, color
+    text = font.render('Score: {}'.format(score), 1, (0, 0, 0))  # Arguments are: text, anti-aliasing, color
     win.blit(text, (370, 20))
 
     pygame.display.update()

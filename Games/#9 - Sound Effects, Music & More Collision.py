@@ -19,11 +19,18 @@ clock = pygame.time.Clock()
 
 score = 0
 
+# Before we can start using our sounds and music we need to load them.
+
+# Music fn when we hit enemy
 # hitsound = pygame.mixer.Sound()
+
+# Music sound when we shoot bullet
 # bulletsound = pygame.mixer.Sound()
 
+# Background music. It always run
 music = pygame.mixer.music.load('music/music.mp3')
-pygame.mixer.music.play(-1)
+pygame.mixer.music.play(-1)  # -1 will ensure the song keeps looping
+
 
 class Player:
     def __init__(self, x, y, width, height):
@@ -58,16 +65,23 @@ class Player:
 
         self.hitbox = (self.x + 20, self.y + 12, 24, 52)
 
+    # Character-Enemy Collision:-
+    # Now we check for collision between the character and any enemies.
+    # The first thing we will do is add a method "hit" to our player class.
     def hit(self):
+        # We are resetting the player position when hit
         self.x = 60
         self.y = 410
         self.walkCount = 0
 
+        # To display reduced score
         font1 = pygame.font.SysFont('comicsans', 100)
         text = font1.render('-5', 1, (255, 0, 0))
         win.blit(text, (500//2 - text.get_width()//2, 200))
         pygame.display.update()
 
+        # After we are hit we are going to display a message to the screen for
+        # a certain period of time. The screen pause will happen due to following lines.
         i = 0
         while i < 300:
             pygame.time.delay(10)
@@ -76,6 +90,7 @@ class Player:
                 if event.type == pygame.QUIT:
                     i = 301
                     pygame.QUIT
+
 
 class Enemy:
     walkRight = [pygame.image.load('pics/R1E.png'), pygame.image.load('pics/R2E.png'),
@@ -194,6 +209,9 @@ run = True
 while run:
     clock.tick(27)
 
+    # Now time to actually check for collision.
+    # Since we've already done collision between our bullets and enemy this step will be very similar.
+    # We can actually reuse our code from before with a few minor changes.
     if man.hitbox[1] < enemy.hitbox[1] + enemy.hitbox[3] and man.hitbox[1] + man.hitbox[3] > enemy.hitbox[1]:
         if man.hitbox[0] + man.hitbox[2] > enemy.hitbox[0] and man.hitbox[0] < enemy.hitbox[0] + enemy.hitbox[2]:
             man.hit()
